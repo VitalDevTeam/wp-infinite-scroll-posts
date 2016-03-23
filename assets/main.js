@@ -68,8 +68,8 @@ var infiniteScrollController = (function($) {
     function onDocumentReady() {
         win            = $(window);
         doc            = $(document);
-        post_container = $('#infinite-content');
-        site_footer    = $('.site-footer');
+        post_container = $('#content-container');
+        site_footer    = $('#footer');
 
         // Load initial posts
         getInfinitePosts('parts/infinite-scroll-loop.php', 'post', page, 4);
