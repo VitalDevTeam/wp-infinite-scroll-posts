@@ -16,7 +16,7 @@ var infiniteScrollController = (function($) {
 
         // Set up our AJAX post data
         var args = {
-            action: 'cc_ajax_infinite_scroll',
+            action: 'vital_ajax_infinite_scroll',
             loop: loop,
             post_type: post_type,
             page_number: page_number
