@@ -17,7 +17,7 @@ function vital_enqueuer() {
      * Localize AJAX URL for use in JavaScript
      */
     $site_info = array(
-        'ajax_url'        => admin_url('admin-ajax.php')
+        'ajax_url' => admin_url('admin-ajax.php')
     );
     wp_localize_script('main', 'SiteInfo', $site_info);
 
