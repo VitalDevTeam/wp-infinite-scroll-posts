@@ -1,5 +1,5 @@
 var infiniteScrollController = (function($) {
-    var win, doc, site_footer, post_container, page = 1, loading = false;
+    var win, doc, post_container, page = 1, loading = false;
 
     /**
      * Get posts via AJAX callback cc_ajax_infinite_scroll()
@@ -69,7 +69,6 @@ var infiniteScrollController = (function($) {
         win            = $(window);
         doc            = $(document);
         post_container = $('#content-container');
-        site_footer    = $('#footer');
 
         // Load initial posts
         getInfinitePosts('parts/infinite-scroll-loop.php', 'post', page, 4);
